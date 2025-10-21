@@ -152,12 +152,41 @@ html,body {
 
 /* footer - call area */
 .card-footer {
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  gap:10px;
-  padding: 12px 16px;
-  background: linear-gradient(90deg,#262626,#eef6ea);
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:10px;
+  padding: 12px 16px;
+  /* * เปลี่ยนพื้นหลังเป็นสีดำอ่อน (Solid Dark Gray) 
+   * จากเดิม: background: linear-gradient(90deg,#262626,#eef6ea); 
+   */
+  background: #262626; 
+}
+
+.call-btn {
+  background: linear-gradient(90deg,#00c853,#00b14f);
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 12px;
+  font-weight: 800;
+  cursor: pointer;
+  /* * เพิ่ม: ปรับขนาดตัวหนังสือของปุ่มโทรที่นี่
+   * (เช่น 1rem, 1.1rem, หรือ 16px)
+   */
+  font-size: 1rem; 
+}
+
+.copy-btn {
+  background: #fff;
+  border: 1px dashed #ccc;
+  padding: 8px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  /* * เพิ่ม: ปรับขนาดตัวหนังสือของปุ่มคัดลอกที่นี่
+   * (เช่น 0.9rem หรือ 14px)
+   */
+  font-size: 0.9rem; 
 }
 .call-btn {
   background: linear-gradient(90deg,#00c853,#00b14f);
