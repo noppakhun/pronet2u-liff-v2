@@ -174,7 +174,7 @@ html,body {
   /* * เพิ่ม: ปรับขนาดตัวหนังสือของปุ่มโทรที่นี่
    * (เช่น 1rem, 1.1rem, หรือ 16px)
    */
-  font-size: 1rem; 
+  font-size: 2rem; 
 }
 
 .copy-btn {
