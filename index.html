@@ -1,24 +1,45 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="th">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ProNet2U - โปรเน็ต AIS</title>
-<link rel="stylesheet" href="style.css">
-<script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
-<script defer src="script.js"></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ProNet2U - โปรเน็ต AIS</title>
+
+  <!-- ฟอนต์ Kanit -->
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- LIFF SDK -->
+  <script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
+
+  <!-- XLSX (อ่านไฟล์ .xlsx บนเบราว์เซอร์) -->
+  <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+
+  <!-- script.js จะโหลดแบบ defer -->
+  <script defer src="script.js"></script>
 </head>
 <body>
-    <header>
-        <img src="logo.png" alt="ProNet2U Logo" class="logo">
-        <h1>โปรโมชั่นเน็ต AIS</h1>
-        <select id="categoryFilter">
-            <option value="ทั้งหมด">ทั้งหมด</option>
-            <option value="รายวัน">รายวัน</option>
-            <option value="รายสัปดาห์">รายสัปดาห์</option>
-            <option value="รายเดือน">รายเดือน</option>
-        </select>
-    </header>
-    <main id="promoContainer" class="promo-container"></main>
+  <header class="header">
+    <img class="logo" src="logo.png" alt="ProNet2U Logo" />
+    <h1>โปรโมชั่นเน็ต AIS</h1>
+
+    <div class="filter-buttons" role="toolbar" aria-label="Filter promotions">
+      <button class="filter-btn" data-cat="รายวัน">รายวัน</button>
+      <button class="filter-btn" data-cat="รายสัปดาห์">รายสัปดาห์</button>
+      <button class="filter-btn" data-cat="รายเดือน">รายเดือน</button>
+      <button id="btnAll" class="filter-btn active" data-cat="all">ทั้งหมด</button>
+    </div>
+  </header>
+
+  <main>
+    <div id="message" class="message">กำลังโหลดโปรโมชั่น...</div>
+    <div id="cards" class="cards-grid" aria-live="polite"></div>
+  </main>
+
+  <footer class="footer">
+    <small>ProNet2U • แก้ไขตารางโปรที่ promos.xlsx แล้วอัปเดตไฟล์บน GitHub</small>
+  </footer>
 </body>
 </html>
