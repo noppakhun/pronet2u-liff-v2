@@ -83,7 +83,7 @@ html,body {
 
 /* promo card */
 .promo-card {
-  background: linear-gradient(180deg, #ffffff 0%, #fbfff6 100%);
+  background: linear-gradient(180deg, #ffffff 0%, #abd398 100%);
   border-radius: 18px;
   border: 2px solid var(--card-border);
   padding: 0;
