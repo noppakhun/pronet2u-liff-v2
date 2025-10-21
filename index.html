@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ProNet2U - โปรเน็ต AIS</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+<script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="ProNet2U Logo" class="logo">
+        <h1>โปรโมชั่นเน็ต AIS</h1>
+        <select id="categoryFilter">
+            <option value="ทั้งหมด">ทั้งหมด</option>
+            <option value="รายวัน">รายวัน</option>
+            <option value="รายสัปดาห์">รายสัปดาห์</option>
+            <option value="รายเดือน">รายเดือน</option>
+        </select>
+    </header>
+    <main id="promoContainer" class="promo-container"></main>
+</body>
+</html>

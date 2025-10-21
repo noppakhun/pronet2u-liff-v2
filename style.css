@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;700;800;900&display=swap');
+
+body {
+    font-family: 'Kanit', 'Tahoma', sans-serif;
+    background: linear-gradient(to bottom, #ffffff, #3b8b46);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    margin: 0;
+}
+
+.logo {
+    width: 120px;
+    margin-bottom: 10px;
+}
+
+header {
+    text-align: center;
+    color: #333;
+}
+
+.promo-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1000px;
+    margin-top: 20px;
+}
+
+.promo-card {
+    background: white;
+    border: 3px solid #e4f4bc;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.promo-card:hover {
+    transform: translateY(-5px);
+}
+
+.ribbon {
+    background-color: #e54c2a;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    padding: 8px;
+    font-size: 1.25rem;
+}
+
+.card-body {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.speed-main {
+    font-size: 3rem;
+    font-weight: 900;
+    color: #3b8b46;
+    text-shadow: 2px 2px 3px white;
+}
+
+.details {
+    text-align: right;
+}
+
+.card-footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: 700;
+    transition: background 0.3s;
+}
+
+.card-footer:hover {
+    background-color: #4CAF50;
+}
