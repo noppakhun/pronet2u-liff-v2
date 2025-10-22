@@ -32,6 +32,7 @@ html,body {
   max-width: 1100px;
   margin: 0 auto;
   width: 100%;
+  flex-wrap: wrap;
 }
 
 .logo {
@@ -53,6 +54,8 @@ html,body {
   display:flex;
   gap:8px;
   align-items:center;
+  flex-basis: 100%; /* <-- 2. เพิ่มบรรทัดนี้ */
+  justify-content: center; /* <-- 3. (แนะนำ) เพิ่มอันนี้เพื่อให้ปุ่มอยู่ตรงกลาง */
 }
 .filter-btn {
   background: #fff;
