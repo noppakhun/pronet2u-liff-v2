@@ -128,17 +128,20 @@ html,body {
 /* body of card */
 .card-body {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 12px;
+  align-items: center; /* จัดให้อยู่กลางแนวตั้งเหมือนเดิม */
+  gap: 12px; /* ช่องว่างระหว่างสองฝั่ง */
   padding: 18px 20px 14px 20px;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; <-- เอาออก */
+  /* justify-content: space-between; <-- เอาออก */
+}
+
 }
 
 .main-left {
   display:flex;
   flex-direction:column;
   gap:10px;
+  flex-shrink: 0; /* <-- เพิ่มบรรทัดนี้ (สำคัญมาก) */
 }
 
 /* speed big */
@@ -160,7 +163,8 @@ html,body {
 /* details right */
 .details {
   text-align: right;
-  min-width: 140px;
+  flex: 1; /* <-- เปลี่ยนจาก min-width */
+  min-width: 0; /* <-- เพิ่มบรรทัดนี้ */
 }
 .details .type {
   font-weight: 800;
